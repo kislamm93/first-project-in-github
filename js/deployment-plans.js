@@ -1,19 +1,20 @@
+let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 let deploymentPlansDefault = [];
 
 loadJSON('data.json',
-    function(data) {
+    function (data) {
         console.log(data);
         deploymentPlansDefault = data.deploymentPlans;
         buildDeploymentPlans(deploymentPlansDefault);
     },
-    function(xhr) {
+    function (xhr) {
         console.error(xhr);
     }
 );
 
 function loadJSON(path, success, error) {
     var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
                 if (success)
