@@ -9,9 +9,6 @@
   "devDependencies": {
     "gh-pages": "^3.1.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kislamm93/first-project-in-github.git"
@@ -22,5 +19,5 @@
   "bugs": {
     "url": "https://github.com/kislamm93/first-project-in-github/issues"
   },
-  "homepage": "https://github.com/kislamm93/first-project-in-github#readme"
+  "homepage": "https://kislamm93.github.io/first-project-in-github/"
 }
