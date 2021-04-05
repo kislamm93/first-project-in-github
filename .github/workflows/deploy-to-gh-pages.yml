@@ -20,7 +20,6 @@ jobs:
       fetch-depth: 0
       with:
         token: ${{ secrets.PAT_TOKEN }}
-        fetch-depth: 0
 
     # Step 2 - rebase with master
     - name: Automatic Rebase
