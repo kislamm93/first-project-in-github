@@ -2,7 +2,7 @@
   "name": "first-project-in-github",
   "version": "1.0.0",
   "description": "Some description",
-  "main": "index.js",
+  "main": "./js/deployment-plans.js",
   "dependencies": {
     "xmlhttprequest": "^1.8.0"
   },
