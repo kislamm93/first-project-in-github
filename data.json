@@ -1,0 +1,154 @@
+{
+    "deploymentPlans": [
+        {
+            "created": "2021-03-08T14:39:54+00:00",
+            "creator": {
+                "email": "someone@email.com",
+                "externalId": "1",
+                "name": "Someone"
+            },
+            "deployments": [
+                {
+                    "device": {
+                        "actionLog": [
+                            {
+                                "action": "install",
+                                "affectedSoftwareComponent": {
+                                    "externalId": "4",
+                                    "externalVersionId": "2",
+                                    "name": "Component #1",
+                                    "version": "2.3.3"
+                                },
+                                "executor": {
+                                    "email": "another.one@email.com",
+                                    "externalId": "2",
+                                    "name": "Another One"
+                                },
+                                "timestamp": "2021-03-09T10:11:07+00:00"
+                            },
+                            {
+                                "action": "install",
+                                "affectedSoftwareComponent": {
+                                    "externalId": "4",
+                                    "externalVersionId": "3",
+                                    "name": "Component #1",
+                                    "version": "2.3.4"
+                                },
+                                "executor": {
+                                    "email": "another.one@email.com",
+                                    "externalId": "2",
+                                    "name": "Another One"
+                                },
+                                "timestamp": "2021-03-09T09:08:07+00:00"
+                            }
+                        ],
+                        "description": "Some description for device 1",
+                        "id": "a30f250a-eb74-4667-9d79-2df02dc2f99a",
+                        "name": "Device #1"
+                    },
+                    "softwareComponents": [
+                        {
+                            "externalId": "4",
+                            "externalVersionId": "3",
+                            "name": "Component #1",
+                            "version": "2.3.4"
+                        },
+                        {
+                            "externalId": "20",
+                            "externalVersionId": "58",
+                            "name": "Component #2",
+                            "version": "1.5.4"
+                        }
+                    ]
+                },
+                {
+                    "device": {
+                        "actionLog": [],
+                        "description": "Some description for device 2",
+                        "id": "29d0688d-d30d-4952-a2fa-e4fb481e6be7",
+                        "name": "Device #2"
+                    },
+                    "softwareComponents": [
+                        {
+                            "externalId": "4",
+                            "externalVersionId": "3",
+                            "name": "Component #1",
+                            "version": "2.3.4"
+                        }
+                    ]
+                }
+            ],
+            "description": "This is an open deployment plan",
+            "id": "2bdb0e71-bc2b-4b10-811b-a00a70f9c4f3",
+            "locked": false,
+            "name": "Test open deployment Plan"
+        },
+        {
+            "created": "2021-03-03T16:00:51+00:00",
+            "creator": {
+                "email": "someone@email.com",
+                "externalId": "1",
+                "name": "Someone"
+            },
+            "deployments": [
+                {
+                    "device": {
+                        "actionLog": [
+                            {
+                                "action": "install",
+                                "affectedSoftwareComponent": {
+                                    "externalId": "56",
+                                    "externalVersionId": "129",
+                                    "name": "Component #3",
+                                    "version": "5.2.123"
+                                },
+                                "executor": {
+                                    "email": "another.one@email.com",
+                                    "externalId": "2",
+                                    "name": "Another One"
+                                },
+                                "timestamp": "2021-03-05T15:38:06+00:00"
+                            },
+                            {
+                                "action": "install",
+                                "affectedSoftwareComponent": {
+                                    "externalId": "97",
+                                    "externalVersionId": "344",
+                                    "name": "Component #4",
+                                    "version": "0.4.3"
+                                },
+                                "executor": {
+                                    "email": "another.one@email.com",
+                                    "externalId": "2",
+                                    "name": "Another One"
+                                },
+                                "timestamp": "2021-03-04T08:18:00+00:00"
+                            }
+                        ],
+                        "description": "Description",
+                        "id": "efc6c4b8-06d4-485f-b0e3-0d88ca69b144",
+                        "name": "Device #2"
+                    },
+                    "softwareComponents": [
+                        {
+                            "externalId": "56",
+                            "externalVersionId": "129",
+                            "name": "Component #3",
+                            "version": "5.2.123"
+                        },
+                        {
+                            "externalId": "97",
+                            "externalVersionId": "344",
+                            "name": "Component #4",
+                            "version": "0.4.3"
+                        }
+                    ]
+                }
+            ],
+            "description": "This is a locked deployment plan",
+            "id": "f86d063d-8c75-4985-93c0-79e6a93bcc34",
+            "locked": true,
+            "name": "Test locked deployment plan"
+        }
+    ]
+}
