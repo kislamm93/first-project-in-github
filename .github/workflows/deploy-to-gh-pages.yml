@@ -17,20 +17,11 @@ jobs:
     # Step 1 - Checks-out repository under $GITHUB_WORKSPACE
     - name: Checkout
       uses: actions/checkout@v2
-      fetch-depth: 0
-      with:
-        token: ${{ secrets.PAT_TOKEN }}
 
-    # Step 2 - rebase with master
-    - name: Automatic Rebase
-      uses: cirrus-actions/rebase@1.4
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    # Step 3 - Push generated site to our gh-pages branch
+    # Step 2 - Push generated site to our gh-pages branch
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-deployment
+          publish_branch: gh-pages
           publish_dir: ./
